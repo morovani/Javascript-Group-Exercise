@@ -13,8 +13,13 @@ window.onload = function () {
 function buildTable(text) {
     let data = JSON.parse(text)
 
-    
     let title = "<h2>" + data.title + "</h2>";
     let elem = document.querySelector("#Title");
     elem.innerHTML = title;
+
+    let motto = "<h2>" + data.motto + "</h2>";
+    document.querySelector("#Motto").innerHTML = motto;
+
+    let summary = "<h3>" + data.summary + "</h3>";
+    document.querySelector("#Summary").innerHTML = summary;
 }
